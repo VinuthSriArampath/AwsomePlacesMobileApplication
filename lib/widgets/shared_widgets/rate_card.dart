@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../util/colors.dart';
-import '../../../widgets/shared_widgets/sub_heading.dart';
+import '../../util/colors.dart';
+import 'sub_heading.dart';
 
 class RateCard extends StatelessWidget {
   const RateCard({super.key});
@@ -10,7 +10,6 @@ class RateCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Center(child: SubHeading(heading: "Rate this Place", headingColor: mainNightLifeColor)),
         Container(
           width: double.infinity,
           height: 50,

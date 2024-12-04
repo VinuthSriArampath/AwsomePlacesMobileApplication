@@ -1,4 +1,4 @@
-import 'package:awsome_places/pages/Cultural_page/widgets/rate_card.dart';
+import 'package:awsome_places/widgets/shared_widgets/rate_card.dart';
 import 'package:awsome_places/widgets/shared_widgets/custom_button.dart';
 import 'package:awsome_places/widgets/shared_widgets/descriptive_text.dart';
 import 'package:awsome_places/widgets/shared_widgets/sub_heading.dart';
@@ -55,6 +55,7 @@ class CulturalPage extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
+              const Center(child: SubHeading(heading: "Rate this Place", headingColor: mainNightLifeColor)),
               const RateCard(),
               const SizedBox(
                 height: 20,
