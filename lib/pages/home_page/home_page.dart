@@ -1,3 +1,5 @@
+import 'package:awsome_places/pages/Cultural_page/cultural_page.dart';
+import 'package:awsome_places/pages/booking_page/booking_page.dart';
 import 'package:awsome_places/pages/home_page/widgets/homepage_appbar.dart';
 import 'package:awsome_places/pages/landmarks_page/landmarks_page.dart';
 import 'package:awsome_places/pages/natural_wonders_page/natural_wonders_page.dart';
@@ -85,13 +87,32 @@ class HomePage extends StatelessWidget {
                         );
                       },
                       child: const CategoryCard(title: "Landmarks", cardColor: secondCategoryColor, cardWidth: 180)),
-                  CategoryCard(title: "Culture", cardColor: secondCategoryColor, cardWidth: 180),
+                  GestureDetector(
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder:(context) =>const CulturalPage()
+                          )
+                        );
+                      },
+                      child: const CategoryCard(title: "Culture", cardColor: secondCategoryColor, cardWidth: 180)),
                 ],
               ),
               const SizedBox(
                 height: 10,
               ),
-              const CategoryCard(title: "Book For A Ride Today!", cardColor: thirdCategoryColor, cardWidth: double.infinity),
+              GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context)=>const BookingPage()
+                      )
+                    );
+                  },
+                  child: const CategoryCard(title: "Book For A Ride Today!", cardColor: thirdCategoryColor, cardWidth: double.infinity)
+              ),
             ],
           ),
         )),
