@@ -9,13 +9,13 @@ import 'package:flutter/material.dart';
  const Color thirdCategoryColor=Color(0xffFFE500);
  
  const Color mainNaturalWondersColor=Color(0xff2EB200);
- final Color subNaturalWondersColor=const Color(0xff2EB200).withOpacity(0.33);
+ final Color subNaturalWondersColor=const Color(0xff2EB200).withOpacity(0.53);
 
  const Color mainNightLifeColor=Color(0xffFF9900);
- final Color subNightLifeColor=const Color(0xffFF9900).withOpacity(0.33);
+ final Color subNightLifeColor=const Color(0xffFF9900).withOpacity(0.53);
 
 const Color mainLandmarksColor=Color(0xff0029FF);
-final Color subLandmarksColor=const Color(0xff0029FF).withOpacity(0.33);
+final Color subLandmarksColor=const Color(0xff0029FF).withOpacity(0.53);
 final Color landmarksBgColor=const Color(0xffCACACA).withOpacity(0.31);
 
 const Color mainCultureColor=Color(0xffC00C00);
